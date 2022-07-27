@@ -2,10 +2,13 @@
 
 #include <vector>
 #include <MapEdge.h>
+#include <MapPolygon.h>
+#include <memory>
 
 namespace ck3E {
 class MapStructure {
   private:
+    std::vector<std::unique_ptr<MapPolygon>> polygons;
 
   public:
     MapStructure();

@@ -19,9 +19,11 @@ target_sources(${PROJECT_NAME}Lib PRIVATE
   include/GenerateProvinceMap.h
   include/MapStructure.h
   include/MapEdge.h
+  include/MapPolygon.h
   src/main.cpp
   src/GenerateProvinceMap.cpp
   src/MapStructure.cpp
+  src/MapPolygon.cpp
 )
 
 target_include_directories(${PROJECT_NAME}Lib PUBLIC include)
@@ -32,6 +34,7 @@ target_sources(${PROJECT_NAME} PRIVATE
   src/GenerateProvinceMap.cpp
   src/MapStructure.cpp
   src/MapEdge.cpp
+  src/MapPolygon.cpp
 )
 target_link_libraries(${PROJECT_NAME} PRIVATE ${PROJECT_NAME}Lib)
 

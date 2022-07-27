@@ -3,4 +3,5 @@ target_sources(CrusaderKings3Extra PRIVATE
     GenerateProvinceMap.cpp
     MapStructure.cpp
     MapEdge.cpp
+    MapPolygon.cpp
 )
