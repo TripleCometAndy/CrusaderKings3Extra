@@ -4,4 +4,5 @@ target_sources(CrusaderKings3Extra PRIVATE
     MapStructure.cpp
     MapEdge.cpp
     MapPolygon.cpp
+    Point.cpp
 )

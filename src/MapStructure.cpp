@@ -8,7 +8,7 @@ MapStructure::MapStructure() {
 
 void MapStructure::create(double area) {
     //Create a random polygon and add it to the vector of polygons
-    MapPolygon *polygon = new MapPolygon(area);
+    MapPolygon *polygon = new MapPolygon(area, 3, 10);
 
     polygons.push_back(std::move(std::unique_ptr<MapPolygon>(polygon)));
 }
